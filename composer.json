@@ -1,0 +1,25 @@
+{
+    "name": "intellect-web-development/terms-sdk",
+    "description": "HTTP-клиент и Messenger-контракты универсального сервиса Terms",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "IWD\\TermsSdk\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "IWD\\TermsSdk\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=8.3",
+        "symfony/http-client": "^7.1 || ^8.0",
+        "symfony/messenger": "^7.1 || ^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
+    }
+}

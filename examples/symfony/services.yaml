@@ -1,0 +1,9 @@
+# Фрагмент config/services.yaml продукта после opt-in Terms.
+# Полный чеклист: sibling terms/INTEGRATION.md
+
+services:
+    IWD\TermsSdk\TermsClient:
+        arguments:
+            $httpClient: '@http_client'
+            $baseUrl: '%env(TERMS_BASE_URL)%'
+            $token: '%env(PLATFORM_SERVICE_TOKEN)%'
