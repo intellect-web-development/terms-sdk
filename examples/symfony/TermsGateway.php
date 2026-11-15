@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Common\Terms;
+namespace IWD\TermsSdk\Examples\Symfony;
 
 use IWD\TermsSdk\AcceptanceCheck;
 use IWD\TermsSdk\AcceptResult;
@@ -14,7 +14,7 @@ use Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface;
 
 /**
  * Пример адаптера продукта: единственная точка связи с Terms.
- * Скопировать в продукт при opt-in; домен TermsClient не импортирует.
+ * В продукте копируйте в App\Common\Terms (или свой BC) при opt-in; домен TermsClient не импортирует.
  *
  * Любая ошибка сервиса превращается в TermsUnavailableHttpException (в продукте — 502): гейт закрыт, а не открыт.
  */
