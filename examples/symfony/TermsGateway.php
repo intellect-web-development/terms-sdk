@@ -14,7 +14,7 @@ use Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface;
 
 /**
  * Пример адаптера продукта: единственная точка связи с Terms.
- * В продукте копируйте в App\Common\Terms (или свой BC) при opt-in; домен TermsClient не импортирует.
+ * В продукте копируйте в App\PlatformProjection\Terms (или свой BC) при opt-in; домен TermsClient не импортирует.
  *
  * Любая ошибка сервиса превращается в TermsUnavailableHttpException (в продукте — 502): гейт закрыт, а не открыт.
  */
